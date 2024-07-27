@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        //1
+
+        // const newArray = [10, 20, 30, 40, 50, 60, 70, 80, 90, 101];
+
+        // let result = [];
+
+
+        // for (let i = 0; i < newArray.length; i++) {
+        //     if (newArray[i] > 50) {
+        //         result.push(newArray[i]);
+        //     }
+        // }
+
+        // console.log(result);
+
+
+        // let united = newArray.concat(result);
+
+        // console.log(united);
+
+        // let result3 = united.lastIndexOf(101);
+
+        // if (result3 % 2 == 0) {
+        //     console.log(united[i]);
+        //     // united.push("cutdur")
+        //     // united.unshift("cutdur")
+        // } else {
+        //     console.log(united[i]);
+        // }
+
+        // console.log(united);
+
+
+
+        
+// 2 ci sual arrayimizin 2 elave array yaradiriq birinci arrayda array3 deki tek elementleri
+//  2ci arrayde cut elementleri elave edirsiz hemin arraylerdeki sonuncu hisseni silib 
+// hemin arraylarin uzunlugun yazirsiz daha sonra her iki arrayi bir array yaradib birlesdirib onu tersine 
+// ekrana cixarmaliyiq
+
+
+let array3 = ["Ayan", "Emil", "Eli", "Nermin", "Firat", "Ayxan", "Zeynal", "Aydan"]
+
+
+let arrayOdd = [];
+let arrayEven = [];
+
+for (let i = 0; i < array3.length; i++) {
+    if (i % 2 == 1) {
+        arrayOdd.push(array3[i]);
+    } else  {
+        arrayEven.push(array3[i]);
+    }
+
+}
+
+// console.log(arrayOdd);
+// console.log(arrayEven);
+
+arrayOdd.pop();
+console.log (arrayOdd.length)
+
+arrayEven.pop();
+console.log (arrayEven.length)
+
+let united = arrayOdd.concat(arrayEven);
+console.log(united);
+
+let lastarray = united.reverse();
+document.write(lastarray);
+
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
